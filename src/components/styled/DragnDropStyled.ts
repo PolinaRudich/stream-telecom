@@ -39,9 +39,6 @@ align-items: center;
 border-radius: 16px;
 cursor: pointer;
 max-height: 60px;
-&:not(:last-child) {
-    margin-right: 20px;
-}
 `;
 
 export const TextareaStyled = styled.textarea`
