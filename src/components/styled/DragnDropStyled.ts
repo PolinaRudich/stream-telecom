@@ -34,9 +34,10 @@ export const ActionButton = styled.div`
 padding: 10px 20px;
 text-align: center;
 border: 1px solid white;
+display: flex;
+align-items: center;
 border-radius: 16px;
 cursor: pointer;
-max-height: 43px;
 &:not(:last-child) {
     margin-right: 20px;
 }
