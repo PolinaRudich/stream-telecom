@@ -38,6 +38,7 @@ display: flex;
 align-items: center;
 border-radius: 16px;
 cursor: pointer;
+max-height: 60px;
 &:not(:last-child) {
     margin-right: 20px;
 }
@@ -58,4 +59,4 @@ background-color: white;
 export const ActionsContainerStyled = styled.div`
 gap:20px;
 margin-bottom: 30px;
-`
+`;

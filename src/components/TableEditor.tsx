@@ -136,19 +136,17 @@ export const TableEditor = () => {
                 onChange={(e: any) => onChangeTextareaFunction(e.target.value)}
                 value={currentData}
             ></TextareaStyled>
-            <div className="flex-container">
-                <ActionButton onClick={() => addNewDragItem(state, setStateFunction)}>press to add</ActionButton>
-                <ActionButton onClick={() => exportData(state)}>
-                    Export Data
-                </ActionButton>
+            <ActionButton onClick={() => addNewDragItem(state, setStateFunction)}>press to add</ActionButton>
+            <ActionButton onClick={() => exportData(state)}>
+                Export Data
+            </ActionButton>
 
-                <ActionButton onClick={() => addNewData(state, currentData, setStateFunction, setCurrentDataFunction, textareaRef, onChangeTextareaFunction)}>
-                    add to list json data
-                </ActionButton>
-                <ActionButton onClick={putIntoTextArea}>
-                    put into textarea
-                </ActionButton>
-            </div>
+            <ActionButton onClick={() => addNewData(state, currentData, setStateFunction, setCurrentDataFunction, textareaRef, onChangeTextareaFunction)}>
+                add to list json data
+            </ActionButton>
+            <ActionButton onClick={putIntoTextArea}>
+                put into textarea
+            </ActionButton>
 
         </ActionsContainerStyled>
         <a href="https://chrome.google.com/" style={{ marginRight: '20px' }} onClick={onClickLink}>Link without preventDefault()</a>
